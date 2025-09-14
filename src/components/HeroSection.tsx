@@ -40,9 +40,9 @@ const HeroSection = () => {
           
           {/* Subheading */}
           <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From AI services to custom AI products, we provide intelligent agents that 
-            <span className="text-secondary font-semibold"> transform </span>
-            the way businesses operate.
+            Where Engineers Infuse 
+            <span className="text-secondary font-semibold"> Code with Aura </span>
+             for Effortless Agents.
           </h2>
           
           {/* Description */}

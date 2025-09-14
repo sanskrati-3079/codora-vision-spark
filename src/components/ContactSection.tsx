@@ -96,8 +96,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">Email Us</h4>
-                    <p className="text-muted-foreground">contact@codoraai.com</p>
-                    <p className="text-muted-foreground">partnerships@codoraai.com</p>
+                    <p className="text-muted-foreground">codora.ai@gmail.com</p>
+                    {/* <p className="text-muted-foreground">partnerships@codoraai.com</p> */}
                   </div>
                 </div>
               </div>
@@ -109,8 +109,10 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">Call Us</h4>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM PST</p>
+                    <p className="text-muted-foreground">+91 9984845854</p>
+                    <p className="text-muted-foreground">+91 9359572867</p>
+
+                    {/* <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM PST</p> */}
                   </div>
                 </div>
               </div>
@@ -123,8 +125,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">Visit Us</h4>
                     <p className="text-muted-foreground">
-                      123 AI Innovation Drive<br />
-                      San Francisco, CA 94105
+                      Vrindapuram, Mathura<br />
+                      Uttar Pradesh, India - 281406
                     </p>
                   </div>
                 </div>

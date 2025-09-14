@@ -4,33 +4,33 @@ const ServicesSection = () => {
   const services = [
     {
       icon: MessageSquare,
-      title: "Customer Support Agents",
-      description: "Intelligent chatbots that understand context, emotion, and intent to provide human-like customer service 24/7.",
-      features: ["Natural Language Processing", "Multi-language Support", "Sentiment Analysis", "Escalation Management"]
+      title: "AutoDash – Automatic Dashboards from Your Data",
+      description: "AutoDash is your instant data storytelling companion. Instead of spending hours cleaning, visualizing, and formatting datasets, AutoDash does it for you—turning raw, messy inputs into polished dashboards in seconds. Whether you are a business analyst, student, or founder, this agent makes insights accessible without requiring technical expertise.",
+      features: ["Seamless Data Integration", "AI-Powered Visualization", "Real-Time Updates", "Customization","One-Click Export"]
     },
     {
       icon: Workflow,
-      title: "Workflow Automation",
-      description: "AI agents that streamline complex business processes, reducing manual work and increasing efficiency.",
-      features: ["Process Optimization", "Task Scheduling", "Error Detection", "Performance Monitoring"]
+      title: "HackEval – Hackathon Evaluation Agent",
+      description: "HackEval is built to modernize hackathon judging by eliminating manual bias and subjectivity. It ensures fairness, transparency, and speed in evaluating multiple teams and projects, giving organizers a professional edge while improving the participant experience.",
+      features: ["AI-Powered Scoring", "Bias-Free Judging", "Instant Feedback", "Team Ranking","Report Generation"]
     },
     {
       icon: BarChart3,
-      title: "Analytics Agents",
-      description: "Data-driven AI that transforms raw information into actionable insights for strategic decision making.",
-      features: ["Predictive Analytics", "Real-time Reporting", "Pattern Recognition", "Trend Forecasting"]
+      title: "SmaranAI – Voice Calendar Assistant",
+      description: "SmaranAI is like having your own personal secretary, available 24/7. It helps you stay on top of your schedule with voice-powered commands, context-aware event creation, and proactive reminders—making productivity effortless.",
+      features: ["Voice Commands", "Smart Scheduling", "Cross-Platform Sync", "Context Awareness","Proactive Alerts","Multi-Language Support"]
     },
     {
       icon: Shield,
-      title: "Security Monitoring",
-      description: "Proactive AI agents that detect threats, monitor vulnerabilities, and protect your digital assets.",
-      features: ["Threat Detection", "Anomaly Monitoring", "Incident Response", "Compliance Tracking"]
+      title: "SafarSaathi – Automated Itinerary Planner",
+      description: "SafarSaathi is your AI-powered travel buddy that designs seamless itineraries tailored to your budget, preferences, and travel style. From solo trips to group vacations, it takes away the stress of planning so you can focus on enjoying your journey.",
+      features: ["Personalized Itineraries", "Smart Route Optimization", "Local Recommendations", "Integrated Maps","Collaborative Planning","Booking Integration"]
     },
     {
       icon: Brain,
-      title: "Intelligent Assistants",
-      description: "Personal AI agents that learn your preferences and help optimize productivity and decision-making.",
-      features: ["Personal Learning", "Smart Scheduling", "Content Curation", "Decision Support"]
+      title: "Pokémon Data Resource",
+      description: "The Pokémon Data Resource acts as a comprehensive encyclopedia, giving developers and AI models structured access to Pokémon information. From base stats to evolution chains, it ensures that all essential game data is available for both learning and simulation purposes.",
+      features: ["Typing System", "Abilities & Effects", "Moves Database", "Evolution Chains","Sprites & Visual Data"]
     },
     {
       icon: Bot,

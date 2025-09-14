@@ -25,7 +25,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-3 left-3 right-3 z-50 transition-all duration-500 ease-out ${
+    <nav className={`fixed top-3 left-3 right-3 z-40 transition-all duration-500 ease-out ${
       isScrolled 
         ? 'glass backdrop-blur-xl border border-primary/20 shadow-2xl rounded-xl animate-slide-down' 
         : 'glass backdrop-blur-md border border-primary/10 shadow-lg rounded-xl animate-fade-in'
@@ -37,7 +37,7 @@ const Navigation = () => {
             <img 
               src={codoraLogo} 
               alt="Codora AI Logo" 
-              className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110"
+              className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-110"
             />
             <span className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 group-hover:tracking-wide">
               Codora AI
