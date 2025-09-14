@@ -43,9 +43,7 @@ const AboutSection = () => {
           <div className="text-center space-y-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-secondary">Our Mission</h3>
             <p className="text-lg text-foreground leading-relaxed max-w-4xl mx-auto">
-              To democratize artificial intelligence by building agents that are not only intelligent 
-              but also intuitive, reliable, and perfectly aligned with human values. We believe every 
-              organization deserves access to AI that enhances human potential rather than replacing it.
+              At Codora.ai, our mission is to deliver expert-built AI agents and tools that automate complex tasks, streamline decision-making, and scale effortlessly — starting with our intelligent hackathon evaluation platform. We bridge deep AI expertise with agile freelance execution to make powerful, production-ready AI accessible to all.
             </p>
           </div>
         </div>
