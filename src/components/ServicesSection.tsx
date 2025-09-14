@@ -46,7 +46,7 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="bg-gradient-accent bg-clip-text text-transparent">Services</span>
+            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Products</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive AI agent solutions designed to transform every aspect of your business operations

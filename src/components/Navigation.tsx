@@ -25,12 +25,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-3 left-3 right-3 z-40 transition-all duration-500 ease-out ${
+    <nav className={`fixed top-3 left-3 right-3 z-50 transition-all duration-500 ease-out ${
       isScrolled 
         ? 'glass backdrop-blur-xl border border-primary/20 shadow-2xl rounded-xl animate-slide-down' 
         : 'glass backdrop-blur-md border border-primary/10 shadow-lg rounded-xl animate-fade-in'
     }`}>
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-12">
           {/* Logo with uploaded image */}
           <div className="flex items-center space-x-2 cursor-pointer group" onClick={() => scrollToSection('hero')}>
@@ -81,14 +81,14 @@ const Navigation = () => {
               Contact
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
-            <div className="flex items-center space-x-2">
+            {/* <div className="flex items-center space-x-2">
               <Button variant="ghost" size="sm" className="text-foreground hover:text-primary text-sm h-8 px-3 transition-all duration-300 hover:scale-105">
                 Sign In
               </Button>
               <Button variant="glow" size="sm" className="text-sm h-8 px-4 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 Sign Up
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile Menu Button */}

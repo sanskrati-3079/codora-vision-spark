@@ -75,13 +75,13 @@ const AboutSection = () => {
         <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-              500+
+              10+
             </div>
             <p className="text-muted-foreground">AI Agents Deployed</p>
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-              99.9%
+              91.9%
             </div>
             <p className="text-muted-foreground">Uptime Guarantee</p>
           </div>

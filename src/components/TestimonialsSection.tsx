@@ -6,27 +6,27 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Chen",
-      role: "Chief Technology Officer",
+      name: "Sandeep",
+      role: "Oracle HCM Engineer",
       company: "TechFlow Innovations",
       industry: "Software Development",
       avatar: "SC",
       rating: 5,
       content: "Codora AI has revolutionized our development workflow. We've reduced our project delivery time by 40% and our team's productivity has skyrocketed. The AI agents handle repetitive tasks seamlessly, allowing our developers to focus on creative problem-solving.",
       highlight: "40% faster delivery",
-      companySize: "200+ employees"
+      // companySize: "200+ employees"
     },
     {
       id: 2,
-      name: "Marcus Rodriguez",
+      name: "Knee Lathur",
       role: "VP of Operations",
-      company: "Global Logistics Pro",
+      company: "Pacific Corporate Ltd.",
       industry: "Logistics & Supply Chain",
       avatar: "MR",
       rating: 5,
       content: "The automation capabilities are incredible. Our customer service response time improved by 60%, and we've eliminated manual data entry errors completely. Codora's AI agents work 24/7, providing consistent service quality.",
       highlight: "60% faster response time",
-      companySize: "500+ employees"
+      // companySize: "500+ employees"
     },
     {
       id: 3,
@@ -38,50 +38,50 @@ const TestimonialsSection = () => {
       rating: 5,
       content: "Codora AI has transformed our research processes. The intelligent data analysis and pattern recognition capabilities have accelerated our research timeline by months. It's like having a brilliant AI research assistant working around the clock.",
       highlight: "Months of research saved",
-      companySize: "150+ employees"
+      // companySize: "150+ employees"
     },
-    {
-      id: 4,
-      name: "James Thompson",
-      role: "Digital Marketing Director",
-      company: "Creative Solutions Agency",
-      industry: "Marketing & Advertising",
-      avatar: "JT",
-      rating: 5,
-      content: "Our campaign performance has improved dramatically since implementing Codora AI. The agents optimize our ad spending in real-time and generate insights we never could have discovered manually. ROI increased by 85%!",
-      highlight: "85% ROI increase",
-      companySize: "50+ employees"
-    },
-    {
-      id: 5,
-      name: "Lisa Park",
-      role: "Chief Financial Officer",
-      company: "FinanceFirst Solutions",
-      industry: "Financial Services",
-      avatar: "LP",
-      rating: 5,
-      content: "The accuracy and speed of financial analysis with Codora AI is outstanding. We've reduced reporting time from days to hours while improving accuracy. The compliance monitoring features give us complete peace of mind.",
-      highlight: "Days to hours reporting",
-      companySize: "300+ employees"
-    },
-    {
-      id: 6,
-      name: "David Kim",
-      role: "Head of Customer Success",
-      company: "RetailMax Solutions",
-      industry: "E-commerce & Retail",
-      avatar: "DK",
-      rating: 5,
-      content: "Customer satisfaction scores increased by 45% after deploying Codora's AI agents. The personalized customer interactions and proactive support have transformed our customer experience completely.",
-      highlight: "45% satisfaction increase",
-      companySize: "400+ employees"
-    }
+    // {
+    //   id: 4,
+    //   name: "James Thompson",
+    //   role: "Digital Marketing Director",
+    //   company: "Creative Solutions Agency",
+    //   industry: "Marketing & Advertising",
+    //   avatar: "JT",
+    //   rating: 5,
+    //   content: "Our campaign performance has improved dramatically since implementing Codora AI. The agents optimize our ad spending in real-time and generate insights we never could have discovered manually. ROI increased by 85%!",
+    //   highlight: "85% ROI increase",
+    //   // companySize: "50+ employees"
+    // },
+    // {
+    //   id: 5,
+    //   name: "Lisa Park",
+    //   role: "Chief Financial Officer",
+    //   company: "FinanceFirst Solutions",
+    //   industry: "Financial Services",
+    //   avatar: "LP",
+    //   rating: 5,
+    //   content: "The accuracy and speed of financial analysis with Codora AI is outstanding. We've reduced reporting time from days to hours while improving accuracy. The compliance monitoring features give us complete peace of mind.",
+    //   highlight: "Days to hours reporting",
+    //   // companySize: "300+ employees"
+    // },
+    // {
+    //   id: 6,
+    //   name: "David Kim",
+    //   role: "Head of Customer Success",
+    //   company: "RetailMax Solutions",
+    //   industry: "E-commerce & Retail",
+    //   avatar: "DK",
+    //   rating: 5,
+    //   content: "Customer satisfaction scores increased by 45% after deploying Codora's AI agents. The personalized customer interactions and proactive support have transformed our customer experience completely.",
+    //   highlight: "45% satisfaction increase",
+    //   // companySize: "400+ employees"
+    // }
   ];
 
   const stats = [
-    { number: "500+", label: "Happy Customers", icon: Users },
-    { number: "99.9%", label: "Uptime Guarantee", icon: Building2 },
-    { number: "2M+", label: "Tasks Automated", icon: Lightbulb },
+    { number: "10+", label: "Happy Customers", icon: Users },
+    { number: "91.9%", label: "Uptime Guarantee", icon: Building2 },
+    { number: "20+", label: "Tasks Automated", icon: Lightbulb },
   ];
 
   const getIndustryColor = (industry: string) => {

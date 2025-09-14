@@ -28,7 +28,7 @@ const Footer = () => {
             <p className="text-muted-foreground">
               Building the future with intelligent agents that transform businesses worldwide.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
                 <Twitter className="w-5 h-5 text-primary" />
               </div>
@@ -41,7 +41,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
                 <Mail className="w-5 h-5 text-primary" />
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
@@ -120,7 +120,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-muted-foreground text-sm">
-            © 2024 Codora AI. All rights reserved.
+            © 2025 Codora AI. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm mt-4 md:mt-0">
             Powered by cutting-edge artificial intelligence
