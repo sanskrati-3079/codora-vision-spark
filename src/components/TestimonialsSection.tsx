@@ -201,7 +201,7 @@ const TestimonialsSection = () => {
                         {testimonial.industry}
                       </Badge>
                       <Badge variant="outline" className="text-xs">
-                        {testimonial.companySize}
+                        {/* {testimonial.companySize} */}
                       </Badge>
                     </div>
                   </div>
