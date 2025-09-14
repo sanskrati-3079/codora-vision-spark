@@ -1,4 +1,5 @@
-import { Zap, Twitter, Linkedin, Github, Mail } from "lucide-react";
+import { Twitter, Linkedin, Github, Mail } from "lucide-react";
+import codoraLogo from "@/assets/codora-logo.png";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -9,15 +10,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card/50 border-t border-border py-16">
+    <footer className="bg-card/30 border-t border-border/50 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand Section */}
+          {/* Brand Section with uploaded logo */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={codoraLogo} 
+                alt="Codora AI Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 Codora AI
               </span>
@@ -26,17 +29,17 @@ const Footer = () => {
               Building the future with intelligent agents that transform businesses worldwide.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer">
-                <Twitter className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
+                <Twitter className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer">
-                <Linkedin className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
+                <Linkedin className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer">
-                <Github className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
+                <Github className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer">
-                <Mail className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:border-primary/50 transition-colors cursor-pointer border border-primary/20">
+                <Mail className="w-5 h-5 text-primary" />
               </div>
             </div>
           </div>

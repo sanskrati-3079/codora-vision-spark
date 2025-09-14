@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-light-background.jpg";
 
 const HeroSection = () => {
   return (
@@ -11,24 +11,24 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/40 to-transparent" />
+      {/* Gradient Overlay for light theme */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/50" />
       
-      {/* Floating Elements */}
+      {/* Floating Elements for light theme */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-glow-pulse" />
-        <div className="absolute top-40 right-20 w-1 h-1 bg-secondary rounded-full animate-glow-pulse delay-1000" />
-        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-accent rounded-full animate-glow-pulse delay-500" />
-        <div className="absolute bottom-20 right-1/3 w-2 h-2 bg-primary rounded-full animate-glow-pulse delay-1500" />
+        <div className="absolute top-20 left-10 w-3 h-3 bg-primary/40 rounded-full animate-glow-pulse" />
+        <div className="absolute top-40 right-20 w-2 h-2 bg-secondary/40 rounded-full animate-glow-pulse delay-1000" />
+        <div className="absolute bottom-32 left-1/4 w-2.5 h-2.5 bg-accent/40 rounded-full animate-glow-pulse delay-500" />
+        <div className="absolute bottom-20 right-1/3 w-3 h-3 bg-primary/40 rounded-full animate-glow-pulse delay-1500" />
       </div>
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <div className="space-y-8 animate-slide-up">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm font-medium">
+          {/* Badge for light theme */}
+          <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full text-sm font-medium border border-primary/20">
             <Sparkles className="w-4 h-4 text-secondary" />
-            Building the Future with Intelligent Agents
+            <span className="text-primary">Building the Future with Intelligent Agents</span>
           </div>
           
           {/* Main Heading */}
@@ -69,8 +69,8 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      {/* Bottom Fade for light theme */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-background/80 to-transparent" />
     </section>
   );
 };

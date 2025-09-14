@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import codoraLogo from "@/assets/codora-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,15 +26,17 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass backdrop-blur-xl border-b border-white/10' : 'bg-transparent'
+      isScrolled ? 'glass backdrop-blur-xl border-b border-primary/10 shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <Zap className="w-5 h-5 text-white" />
-            </div>
+          {/* Logo with uploaded image */}
+          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
+            <img 
+              src={codoraLogo} 
+              alt="Codora AI Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Codora AI
             </span>
@@ -67,7 +70,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden w-10 h-10 rounded-lg glass flex items-center justify-center"
+            className="md:hidden w-10 h-10 rounded-lg glass flex items-center justify-center border border-primary/20"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -75,7 +78,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 glass rounded-lg mt-2 border border-white/10">
+          <div className="md:hidden py-4 glass rounded-lg mt-2 border border-primary/10 shadow-lg">
             <div className="flex flex-col space-y-4 px-4">
               <button 
                 onClick={() => scrollToSection('about')}

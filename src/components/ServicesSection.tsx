@@ -41,7 +41,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-background to-card/30">
+    <section className="py-24 px-6 bg-gradient-to-b from-background to-muted/20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
@@ -108,7 +108,7 @@ const ServicesSection = () => {
               <button className="hero-button px-8 py-3 rounded-lg font-semibold">
                 Start Free Consultation
               </button>
-              <button className="glass px-8 py-3 rounded-lg font-medium text-white border-white/20 hover:border-primary/50 transition-all">
+              <button className="glass px-8 py-3 rounded-lg font-medium text-primary border-primary/20 hover:border-primary/50 transition-all">
                 View Case Studies
               </button>
             </div>

@@ -2,76 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Codora AI Design System - Futuristic AI Theme */
+/* Codora AI Light Theme - Matching Logo Colors */
 
 @layer base {
   :root {
-    /* Core Theme Colors */
-    --background: 218 100% 3%; /* Space Dark #0b0f1a */
-    --foreground: 0 0% 98%;
+    /* Light Theme Colors matching the logo */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 222 47% 11%; /* Dark blue-gray text */
 
-    --card: 218 50% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 218 50% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Electric Blue Primary */
-    --primary: 220 100% 50%; /* Electric Blue #0066ff */
-    --primary-foreground: 0 0% 98%;
+    /* Logo Blue Primary - Deep blue from logo */
+    --primary: 225 83% 25%; /* Deep blue #1E3A8A */
+    --primary-foreground: 0 0% 100%;
 
-    /* Neon Aqua Secondary */
-    --secondary: 190 100% 50%; /* Neon Aqua #00f6ff */
-    --secondary-foreground: 218 100% 3%;
+    /* Logo Cyan Secondary - Bright cyan from logo */
+    --secondary: 188 100% 44%; /* Bright cyan #00D4FF */
+    --secondary-foreground: 225 83% 25%;
 
-    /* Gradient Violet Accent */
-    --accent: 269 70% 45%; /* Gradient Violet #8a2be2 */
-    --accent-foreground: 0 0% 98%;
+    /* Logo Accent - Medium blue */
+    --accent: 214 100% 50%; /* Bright blue #0080FF */
+    --accent-foreground: 0 0% 100%;
 
-    --muted: 218 30% 15%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 218 30% 20%;
-    --input: 218 30% 15%;
-    --ring: 220 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 225 83% 25%;
 
     --radius: 0.75rem;
 
-    /* Custom Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)));
+    /* Logo-Inspired Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225, 83%, 25%), hsl(214, 100%, 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(188, 100%, 44%), hsl(204, 100%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(225, 83%, 25%), hsl(214, 100%, 50%), hsl(188, 100%, 44%));
     
-    /* Glowing Effects */
-    --glow-primary: 0 0 30px hsl(var(--primary) / 0.5);
-    --glow-secondary: 0 0 30px hsl(var(--secondary) / 0.5);
-    --glow-accent: 0 0 30px hsl(var(--accent) / 0.5);
+    /* Subtle Glowing Effects for Light Theme */
+    --glow-primary: 0 4px 20px hsl(225, 83%, 25%, 0.15);
+    --glow-secondary: 0 4px 20px hsl(188, 100%, 44%, 0.15);
+    --glow-accent: 0 4px 20px hsl(214, 100%, 50%, 0.15);
 
-    /* Animation Speeds */
+    /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-glow: all 0.5s ease;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  /* Dark theme is our primary theme - no light mode needed */
 }
 
 @layer base {
@@ -90,7 +81,7 @@
     scroll-behavior: smooth;
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar for light theme */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -110,18 +101,20 @@
 }
 
 @layer components {
-  /* Glassmorphism utility */
+  /* Light theme card styling */
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
-  /* Glowing border effect */
+  /* Light theme glowing border effect */
   .glow-border {
     position: relative;
     background: hsl(var(--card));
     border: 1px solid transparent;
+    box-shadow: var(--glow-primary);
   }
 
   .glow-border::before {
@@ -170,7 +163,7 @@
     transition: var(--transition-smooth);
   }
 
-  /* Hero button styling */
+  /* Light theme hero button styling */
   .hero-button {
     background: var(--gradient-primary);
     border: none;
@@ -179,6 +172,7 @@
     transition: var(--transition-glow);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--glow-primary);
   }
 
   .hero-button::before {
@@ -188,7 +182,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: left 0.5s;
   }
 
@@ -197,17 +191,18 @@
   }
 
   .hero-button:hover {
-    box-shadow: var(--glow-primary);
+    box-shadow: var(--glow-primary), 0 8px 25px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
   }
 
-  /* Service card styling */
+  /* Light theme service card styling */
   .service-card {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   }
 
   .service-card::before {
@@ -216,7 +211,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 1px;
+    height: 2px;
     background: var(--gradient-primary);
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -227,8 +222,8 @@
   }
 
   .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--glow-primary);
+    transform: translateY(-8px);
+    box-shadow: var(--glow-primary), 0 10px 30px rgba(0, 0, 0, 0.1);
     border-color: hsl(var(--primary));
   }
 }
