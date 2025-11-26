@@ -20,24 +20,24 @@ const ServicesSection = () => {
       description: "SmaranAI is like having your own personal secretary, available 24/7. It helps you stay on top of your schedule with voice-powered commands, context-aware event creation, and proactive reminders—making productivity effortless.",
       features: ["Voice Commands", "Smart Scheduling", "Cross-Platform Sync", "Context Awareness","Proactive Alerts","Multi-Language Support"]
     },
-    {
-      icon: Shield,
-      title: "SafarSaathi – Automated Itinerary Planner",
-      description: "SafarSaathi is your AI-powered travel buddy that designs seamless itineraries tailored to your budget, preferences, and travel style. From solo trips to group vacations, it takes away the stress of planning so you can focus on enjoying your journey.",
-      features: ["Personalized Itineraries", "Smart Route Optimization", "Local Recommendations", "Integrated Maps","Collaborative Planning","Booking Integration"]
-    },
-    {
-      icon: Brain,
-      title: "Pokémon Data Resource",
-      description: "The Pokémon Data Resource acts as a comprehensive encyclopedia, giving developers and AI models structured access to Pokémon information. From base stats to evolution chains, it ensures that all essential game data is available for both learning and simulation purposes.",
-      features: ["Typing System", "Abilities & Effects", "Moves Database", "Evolution Chains","Sprites & Visual Data"]
-    },
-    {
-      icon: Bot,
-      title: "Custom AI Solutions",
-      description: "Bespoke AI agents tailored to your specific industry needs and business requirements.",
-      features: ["Industry Expertise", "Custom Training", "API Integration", "Scalable Architecture"]
-    }
+    // {
+    //   icon: Shield,
+    //   title: "SafarSaathi – Automated Itinerary Planner",
+    //   description: "SafarSaathi is your AI-powered travel buddy that designs seamless itineraries tailored to your budget, preferences, and travel style. From solo trips to group vacations, it takes away the stress of planning so you can focus on enjoying your journey.",
+    //   features: ["Personalized Itineraries", "Smart Route Optimization", "Local Recommendations", "Integrated Maps","Collaborative Planning","Booking Integration"]
+    // },
+    // {
+    //   icon: Brain,
+    //   title: "Pokémon Data Resource",
+    //   description: "The Pokémon Data Resource acts as a comprehensive encyclopedia, giving developers and AI models structured access to Pokémon information. From base stats to evolution chains, it ensures that all essential game data is available for both learning and simulation purposes.",
+    //   features: ["Typing System", "Abilities & Effects", "Moves Database", "Evolution Chains","Sprites & Visual Data"]
+    // },
+    // {
+    //   icon: Bot,
+    //   title: "Custom AI Solutions",
+    //   description: "Bespoke AI agents tailored to your specific industry needs and business requirements.",
+    //   features: ["Industry Expertise", "Custom Training", "API Integration", "Scalable Architecture"]
+    // }
   ];
 
   return (
@@ -55,12 +55,19 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className="service-card rounded-2xl p-8 h-full group animate-slide-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+          {services.map((service, index) => {
+            const isFeatured = service.title.includes("HackEval");
+            return (
+              <div
+                key={service.title}
+                className={`service-card rounded-2xl p-8 h-full group animate-slide-up relative transition-transform duration-500 ${
+                  isFeatured
+                    ? "scale-105 md:scale-105 shadow-2xl ring-1 ring-primary/20 bg-gradient-to-r from-primary/6 to-transparent z-10 hover:scale-110"
+                    : "hover:shadow-lg"
+                }`}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Featured badge removed as requested */}
               {/* Icon */}
               <div className="mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -91,8 +98,9 @@ const ServicesSection = () => {
 
               {/* Hover Effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
 
         {/* CTA Section */}

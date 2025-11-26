@@ -5,66 +5,66 @@ import { ArrowRight, Zap, Brain, Rocket, Shield, Globe, Users } from "lucide-rea
 
 const ProductsSection = () => {
   const products = [
-    {
-      id: 1,
-      title: "Codora Agent Studio",
-      description: "Build, train, and deploy intelligent AI agents with our no-code platform. Perfect for businesses looking to automate complex workflows.",
-      features: ["Visual Agent Builder", "Pre-built Templates", "Real-time Analytics", "Multi-platform Deployment"],
-      icon: Brain,
-      status: "Available",
-      category: "Platform",
-      gradient: "from-primary to-secondary"
-    },
-    {
-      id: 2,
-      title: "Codora Enterprise Suite",
-      description: "Comprehensive AI solution for large organizations. Includes advanced security, custom integrations, and dedicated support.",
-      features: ["Enterprise Security", "Custom Integrations", "24/7 Support", "SLA Guarantees"],
-      icon: Shield,
-      status: "Available",
-      category: "Enterprise",
-      gradient: "from-secondary to-accent"
-    },
-    {
-      id: 3,
-      title: "Codora API Gateway",
-      description: "Powerful API infrastructure for connecting and orchestrating multiple AI agents across different platforms and services.",
-      features: ["RESTful APIs", "Webhook Support", "Rate Limiting", "Developer Tools"],
-      icon: Globe,
-      status: "Available",
-      category: "API",
-      gradient: "from-accent to-primary"
-    },
-    {
-      id: 4,
-      title: "Codora Collaborative Workspace",
-      description: "Team-based environment for building and managing AI agents collaboratively with real-time editing and version control.",
-      features: ["Real-time Collaboration", "Version Control", "Team Management", "Shared Templates"],
-      icon: Users,
-      status: "Coming Soon",
-      category: "Collaboration",
-      gradient: "from-primary/50 to-secondary/50"
-    },
-    {
-      id: 5,
-      title: "Codora AutoScale Engine",
-      description: "Intelligent scaling solution that automatically optimizes your AI agent performance based on demand and usage patterns.",
-      features: ["Auto Scaling", "Performance Optimization", "Cost Management", "Load Balancing"],
-      icon: Rocket,
-      status: "Beta",
-      category: "Infrastructure",
-      gradient: "from-secondary/70 to-accent/70"
-    },
-    {
-      id: 6,
-      title: "Codora Intelligence Hub",
-      description: "Advanced analytics and insights platform for monitoring, analyzing, and improving your AI agent performance.",
-      features: ["Advanced Analytics", "Performance Insights", "Predictive Monitoring", "Custom Dashboards"],
-      icon: Zap,
-      status: "Coming Soon",
-      category: "Analytics",
-      gradient: "from-accent/60 to-primary/60"
-    }
+    // {
+    //   id: 1,
+    //   title: "Codora Agent Studio",
+    //   description: "Build, train, and deploy intelligent AI agents with our no-code platform. Perfect for businesses looking to automate complex workflows.",
+    //   features: ["Visual Agent Builder", "Pre-built Templates", "Real-time Analytics", "Multi-platform Deployment"],
+    //   icon: Brain,
+    //   status: "Awaited",
+    //   category: "Platform",
+    //   gradient: "from-primary to-secondary"
+    // },
+    // {
+    //   id: 2,
+    //   title: "Codora Enterprise Suite",
+    //   description: "Comprehensive AI solution for large organizations. Includes advanced security, custom integrations, and dedicated support.",
+    //   features: ["Enterprise Security", "Custom Integrations", "24/7 Support", "SLA Guarantees"],
+    //   icon: Shield,
+    //   status: "Awaited",
+    //   category: "Enterprise",
+    //   gradient: "from-secondary to-accent"
+    // },
+    // {
+    //   id: 3,
+    //   title: "Codora API Gateway",
+    //   description: "Powerful API infrastructure for connecting and orchestrating multiple AI agents across different platforms and services.",
+    //   features: ["RESTful APIs", "Webhook Support", "Rate Limiting", "Developer Tools"],
+    //   icon: Globe,
+    //   status: "Awaited",
+    //   category: "API",
+    //   gradient: "from-accent to-primary"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Codora Collaborative Workspace",
+    //   description: "Team-based environment for building and managing AI agents collaboratively with real-time editing and version control.",
+    //   features: ["Real-time Collaboration", "Version Control", "Team Management", "Shared Templates"],
+    //   icon: Users,
+    //   status: "Coming Soon",
+    //   category: "Collaboration",
+    //   gradient: "from-primary/50 to-secondary/50"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Codora AutoScale Engine",
+    //   description: "Intelligent scaling solution that automatically optimizes your AI agent performance based on demand and usage patterns.",
+    //   features: ["Auto Scaling", "Performance Optimization", "Cost Management", "Load Balancing"],
+    //   icon: Rocket,
+    //   status: "Beta",
+    //   category: "Infrastructure",
+    //   gradient: "from-secondary/70 to-accent/70"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Codora Intelligence Hub",
+    //   description: "Advanced analytics and insights platform for monitoring, analyzing, and improving your AI agent performance.",
+    //   features: ["Advanced Analytics", "Performance Insights", "Predictive Monitoring", "Custom Dashboards"],
+    //   icon: Zap,
+    //   status: "Coming Soon",
+    //   category: "Analytics",
+    //   gradient: "from-accent/60 to-primary/60"
+    // }
   ];
 
   const getStatusColor = (status: string) => {
